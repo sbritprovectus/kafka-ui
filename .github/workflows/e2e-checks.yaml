@@ -44,7 +44,7 @@ jobs:
       - name: e2e run
         run: |
           mvn versions:set -DnewVersion=$GITHUB_SHA
-          mvn clean -f ./kafka-ui-e2e-checks/pom.xml -Pprod test
+          mvn clean -f ./kafka-ui-e2e-checks/pom.xml -Pprod test 
       - name: Generate allure report
         uses: simple-elf/allure-report-action@master
         if: always()
