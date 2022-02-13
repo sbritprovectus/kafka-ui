@@ -17,7 +17,7 @@ public class SmokeTests extends BaseTest {
     void mainPageLoads() {
         pages.open()
                 .isOnPage();
-        compareScreenshots("main");
+        compareScreenshots("main"); 
     }
 
 }
